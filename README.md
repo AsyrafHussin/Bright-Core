@@ -4,7 +4,7 @@
 PHP Micro-Framework by Asyraf Hussin
 
 ## About this Repo
-This Repo is Main Core Library for [Bright Framework](https://brightframework.psm.my)
+Main Core Library for [Bright Framework](https://brightframework.psm.my)
 
 ## Contributing
 If you spot any errors, typos or missing information, please submit a pull request.
