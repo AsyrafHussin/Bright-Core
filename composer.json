@@ -15,6 +15,5 @@
         "psr-4": {
             "Bright\\": "Bright/"
         }
-    },
-    "version": "0.1"
+    }
 }
