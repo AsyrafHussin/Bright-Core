@@ -40,7 +40,7 @@ final class ServeCommand extends Command
         // get port
         $port = $input->getOption('port');
 
-        echo '\033[33m Bright Development Server started \n \033[0mListening on http://'.$host.':'.$port.'\n';
+        echo "\033[33m Bright Development Server started \n \033[0mListening on http://".$host.":".$port."\n";
         shell_exec('php -S '.$host.':'.$port.' public/index.php');
 
         // 0 = success, other values = fail
