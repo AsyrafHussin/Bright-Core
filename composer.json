@@ -10,7 +10,9 @@
             "email": "asyrafhussin4@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "twig/twig": "~2.0"
+    },
     "autoload": {
         "psr-4": {
             "Bright\\": "Bright/"
