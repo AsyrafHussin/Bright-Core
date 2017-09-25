@@ -100,15 +100,16 @@ class Router
     }
 
     /**
-     * Dispatch the route, creating the controller object and running the
+     * Run the route, creating the controller object and running the
      * action method
      *
      * @param string $url The route URL
      *
      * @return void
      */
-    public function dispatch($url)
+    public function run()
     {
+        $url = $_SERVER["REQUEST_URI"];
         $url = $this->removeQueryStringVariables($url);
 
         if ($this->match($url)) {
