@@ -11,12 +11,12 @@ class Command
     
     public function __construct()
     {
-        $this->consoleApplication = new Symfony\Component\Console\Application;
+        $this->consoleApplication = new \Symfony\Component\Console\Application;
     }
 
     public function registerCommand()
     {
-        $this->consoleApplication->add(new Bright\Command\ServeCommand);
+        $this->consoleApplication->add(new \Bright\Console\ServeCommand);
     }
 
     public function run()
