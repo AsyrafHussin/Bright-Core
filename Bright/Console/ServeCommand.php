@@ -17,6 +17,11 @@ final class ServeCommand extends Command
     {
         $this->setName('serve');
         $this->setDescription('Serve the application on the PHP development server.');
+        $this->addOption('host',
+                          null,InputOption::VALUE_REQUIRED,
+                          'Development Server host listening',
+                          'localhost'
+                        );        
         $this->addOption('port',
                           null,InputOption::VALUE_REQUIRED,
                           'Development Server port listening',
@@ -29,14 +34,15 @@ final class ServeCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        // get host
+        $host = $input->getOption('host');
+
         // get port
         $port = $input->getOption('port');
 
-        echo "\033[33m Bright Development Server started \n \033[0mListening on http://localhost:".$port."\n";
-        shell_exec('php -S localhost:'.$port.' public/index.php');
+        echo '\033[33m Bright Development Server started \n \033[0mListening on http://'.$host.':'.$port.'\n';
+        shell_exec('php -S '.$host.':'.$port.' public/index.php');
 
-        // return value is important when using CI
-        // to fail the build when the command fails
         // 0 = success, other values = fail
         return 0;
     }
