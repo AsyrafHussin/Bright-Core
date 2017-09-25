@@ -2,6 +2,9 @@
 
 namespace Bright\Console;
 
+use \Symfony\Component\Console\Application;
+use \Bright\Console\ServeCommand;
+
 /**
  * Command
  */
@@ -11,12 +14,14 @@ class Command
     
     public function __construct()
     {
-        $this->consoleApplication = new \Symfony\Component\Console\Application;
+        $name = "Bright Framework";
+        $version = "0.1";
+        $this->consoleApplication = new Application($name,$version);
     }
 
     public function registerCommand()
     {
-        $this->consoleApplication->add(new \Bright\Console\ServeCommand);
+        $this->consoleApplication->add(new ServeCommand());
     }
 
     public function run()
