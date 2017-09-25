@@ -1,0 +1,21 @@
+{
+    "name": "asyrafhussin/bright-core",
+    "description": "PHP Micro-Framework",
+    "keywords": ["php", "php-framework"],
+    "license": "MIT",
+    "homepage": "https://brightframework.psm.my",
+    "authors": [
+        {
+            "name": "Asyraf Hussin",
+            "email": "asyrafhussin4@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bright\\": "Bright/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
