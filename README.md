@@ -1,7 +1,10 @@
-<img src="logo.svg" width="120" align="left" />
+<div align="center">
+    <img width=150 src ="logo.svg" />
+    <br>
 
-# Bright
-PHP Micro-Framework by Asyraf Hussin
+    <h1> Bright </h1> 
+    <p> PHP Micro-Framework by Asyraf Hussin </p>
+</div>
 
 ## About this Repo
 Main Core Library for [Bright Framework](https://brightframework.psm.my)
